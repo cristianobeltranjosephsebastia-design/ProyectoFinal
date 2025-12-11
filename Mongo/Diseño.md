@@ -60,41 +60,4 @@ Control básico del inventario para emergencias.
   ]
 }
 
-**Motivo de uso:**  
-La estructura del inventario cambia frecuentemente y requiere flexibilidad.
-
-# Diseño de Colecciones – Proyecto Final
-
-## 1. Colección: productos
-- **Campos:**
-  - `_id`: ObjectId
-  - `nombre`: String
-  - `categoria`: String
-  - `precio`: Number
-  - `stock`: Number
-- **Justificación:**  
-  Esta colección almacena productos con una estructura simple, ideal para un esquema documental flexible. MongoDB permite añadir nuevos campos en el futuro sin modificar esquemas rígidos, y facilita consultas por categoría, stock o precio.
-
----
-
-## 2. Colección: clientes
-- **Campos sugeridos:**
-  - `_id`: ObjectId
-  - `nombre`: String
-  - `correo`: String
-  - `preferencias`: Documento anidado
-- **Justificación:**  
-  MongoDB maneja estructuras semiestructuradas como preferencias del cliente sin necesidad de normalizar en múltiples tablas SQL.
-
----
-
-## 3. Colección: pedidos
-- **Campos sugeridos:**
-  - `_id`: ObjectId
-  - `cliente_id`: ObjectId
-  - `fecha`: Date
-  - `items`: Array de `{ producto_id, cantidad }`
-  - `total`: Number
-- **Justificación:**  
-  Un pedido es un documento perfecto para MongoDB: contiene listas de productos y datos anidados que en SQL requerirían varias tablas y JOINs.
 
