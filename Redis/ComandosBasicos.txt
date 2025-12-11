@@ -1,0 +1,16 @@
+SET contador:visitas 1
+INCR contador:visitas
+GET contador:visitas
+
+LPUSH cola:turnos "Paciente 1"
+LPUSH cola:turnos "Paciente 2"
+RPOP cola:turnos
+
+HSET sesion:123 usuario "Juan"
+HGETALL sesion:123
+
+SADD medicos:activos "Gomez"
+SADD medicos:activos "Ruiz"
+SMEMBERS medicos:activos
+
+SET cache:paciente:1 "{nombre:'Juan'}" EX 30

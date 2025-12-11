@@ -1,0 +1,39 @@
+{
+    "pacientes_perfil": [
+        {
+            "id_paciente_sql": 1,
+            "direccion": "Calle 123",
+            "alergias": [
+                "Polen",
+                "Penicilina"
+            ],
+            "historiales": [
+                {
+                    "fecha": "2025-01-01",
+                    "descripcion": "Consulta general"
+                }
+            ]
+        }
+    ],
+    "notas_medicas": [
+        {
+            "id_cita_sql": 1,
+            "notas": "Paciente estable",
+            "tipo": "consulta",
+            "fecha": "2025-01-02"
+        }
+    ],
+    "inventario_medicamentos": [
+        {
+            "nombre": "Ibuprofeno",
+            "categoria": "Dolor",
+            "cantidad": 120,
+            "proveedores": [
+                {
+                    "nombre": "Farmacorp",
+                    "telefono": "3001234567"
+                }
+            ]
+        }
+    ]
+}
