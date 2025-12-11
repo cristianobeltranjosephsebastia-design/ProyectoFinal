@@ -1,6 +1,6 @@
 # Sistema de Gestión Médica – Proyecto Final (SQL + MongoDB + Redis)
 
-## 📌 Descripción General
+# Descripción General
 
 Este proyecto implementa un sistema de información para la gestión de pacientes, citas médicas, facturación y documentación clínica.  
 La arquitectura utiliza **tres motores de bases de datos de forma integrada**:
@@ -13,7 +13,7 @@ El objetivo es demostrar un ecosistema de datos híbrido capaz de soportar flujo
 
 ---
 
-## 📁 Estructura del Repositorio
+# Estructura del Repositorio
 
 /sql/
 modelo_conceptual.pdf
@@ -40,7 +40,7 @@ README.md
 
 ---
 
-## 🗄️ Base de Datos SQL (PostgreSQL)
+# Base de Datos SQL (PostgreSQL)
 
 ### Tablas implementadas
 
@@ -56,7 +56,7 @@ Los scripts incluidos permiten crear la base, poblarla e incluir consultas avanz
 
 ---
 
-## 📚 Base de Datos Documental (MongoDB)
+# Base de Datos Documental (MongoDB)
 
 Colecciones implementadas:
 
@@ -68,7 +68,7 @@ MongoDB se usa para almacenar información no estructurada o de alta variabilida
 
 ---
 
-## ⚡ Base de Datos en Memoria (Redis)
+# Base de Datos en Memoria (Redis)
 
 Se implementaron estructuras clave para optimizar operaciones en tiempo real:
 
@@ -82,7 +82,7 @@ Incluye ejemplos, comandos y casos de uso en los archivos correspondientes.
 
 ---
 
-## 🔗 Integración entre las Tres Bases
+#Integración entre las Tres Bases
 
 El sistema combina los tres motores en un flujo coordinado:
 
@@ -95,7 +95,7 @@ La descripción completa de esta integración está en:
 
 ---
 
-## 🎯 Caso de Uso Integrado Ejemplo
+# Caso de Uso Integrado Ejemplo
 
 1. Paciente agenda cita → SQL la almacena.
 2. Redis aumenta contador y agrega a la cola.
@@ -104,7 +104,7 @@ La descripción completa de esta integración está en:
 
 ---
 
-## 👥 Trabajo Colaborativo
+# Trabajo Colaborativo
 
 Incluye:
 
@@ -116,7 +116,7 @@ Incluye:
 
 ---
 
-## 🎤 Exposición Final
+# Exposición Final
 
 El repositorio contiene la información necesaria para presentar:
 
@@ -129,7 +129,7 @@ El repositorio contiene la información necesaria para presentar:
 
 ---
 
-## ✔ Estado del Proyecto
+# Estado del Proyecto
 
 El proyecto está completo e incluye:
 
@@ -142,39 +142,39 @@ El proyecto está completo e incluye:
 
 ---
 
-## 👨‍💻 Autores
+# Autores
 
 Joseph Sebastian Cristiano Beltran - 3203084
 Jostyn Nicolas Cristiano Beltran - 3203084
 
 ---
 
-## ▶️ Cómo Ejecutar el Proyecto
+# Cómo Ejecutar el Proyecto
 
 Este proyecto contiene múltiples componentes, organizados por motor de base de datos.  
 A continuación se describe cómo utilizar cada uno:
 
-### 🔹 1. PostgreSQL (SQL)
+## 1. PostgreSQL (SQL)
 
 1. Crear la base de datos en PostgreSQL.
 2. Ejecutar el script `create_tables.sql` para generar el esquema.
 3. Ejecutar `insert_data.sql` para poblar la base.
 4. Probar las consultas en `queries_avanzadas.sql`.
 
-### 🔹 2. MongoDB
+## 2. MongoDB
 
 1. Crear una base de datos (por ejemplo: `clinica_mongo`).
 2. Insertar los documentos de prueba usando `inserts.json`.
 3. Ejecutar las agregaciones avanzadas de `consultas_aggregation.md`.
 
-### 🔹 3. Redis
+## 3. Redis
 
 1. Iniciar el servidor Redis.
 2. Probar los comandos básicos usando `comandos_basicos.txt`.
 3. Ejecutar las operaciones de cada estructura usando `operaciones_estructuras.txt`.
 4. Revisar los casos de uso reales en `casos_de_uso_redis.md`.
 
-### 🧩 Integración
+## Integración
 
 Las explicaciones completas sobre cómo se conectan SQL + MongoDB + Redis están en:  
 `/documentacion/conexion_entre_las_3_bases.md`
